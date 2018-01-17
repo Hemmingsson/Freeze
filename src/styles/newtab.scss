@@ -1,3 +1,4 @@
+@import "instagram.css";
 @import url('https://fonts.googleapis.com/css?family=Rubik:500');
 
 body {
@@ -12,7 +13,9 @@ body {
   user-select: none; 
  }
 
-.video_contain {
+
+
+.video-contain {
     position: absolute;
     top: -50%;
     left: -50%;
@@ -31,7 +34,6 @@ video {
     min-height: 50%;
     min-width: 50%;
     transition: opacity 400ms;
-    filter: contrast(0.85) brightness(.92) saturate(1) hue-rotate(-20deg);
     &.loading{
     	opacity: 0;
     }

@@ -1,3 +1,48 @@
-.clock-type{
-	display: none;
+@import "instagram.css";
+
+
+body{
+	padding: 10px;
+	margin: 0;
+	width: 500px;
+}	
+
+
+.preview{
+  	width: calc(100vw - 20px);
+	height: calc(100vw * 8/16);
+	overflow: hidden;
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	user-select: none; 
+}
+
+
+video {
+     height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+
+.disabeld{
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.clock{
+	position: absolute;
+	z-index: 100;
+	font-size: 8vmax;
+	color: white;
+	box-shadow: 0px 0px 0px 0.8vmax #fff; 
+	padding: 0.2vmax 1.5vmax 0.5vmax 1.5vmax;
+	border-radius: 0.3vmax;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	transition: opacity 200ms;
+	opacity: 0;
 }

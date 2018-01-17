@@ -1,7 +1,7 @@
-import ext from './utils/ext'
-import storage from './utils/storage'
+import storage from './storage'
 
-var dataBaseUrl = 'https://cdn.rawgit.com/Hemmingsson/mattias.lol/e0b206a3/test.json'
+var dataBaseUrl = 'https://cdn.rawgit.com/Hemmingsson/downtime-extension/5a5aed84/cinemagraphs.json'
+var dayInMs = 86400000
 
 function isEmpty (obj) {
   for (var prop in obj) {
@@ -46,10 +46,8 @@ var isDataBaseOlderThen = function (milliseconds) {
     })
   })
 }
-var dayInMs = 86400000
-var imageData
 
-var syncDataBase = function () {
+exports.syncDataBase = function () {
   console.log('Starting to sync Database')
   return new Promise(async function (resolve) {
     // Rerteve database from storage
@@ -69,8 +67,7 @@ var syncDataBase = function () {
       })
     } else {
       console.log('Database found')
-      resolve(db)
+      resolve(db.imgurIds)
     }
   })
 }
-

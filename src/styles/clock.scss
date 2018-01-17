@@ -1,0 +1,37 @@
+.clock-type{
+	display: none;
+}
+
+.video-contain{
+	width: 560px;
+	height: calc(560px * 9/16);
+	overflow: hidden;
+	position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    transition: opacity 400ms;
+    filter: contrast(0.85) brightness(.92) saturate(1) hue-rotate(-20deg);
+}
+
+.clock{
+	position: absolute;
+	z-index: 100;
+	font-size: 8vmax;
+	color: white;
+	//border: 0.8vw solid white;
+	box-shadow: 0px 0px 0px 0.8vmax #fff; 
+	padding: 0.2vmax 1.5vmax;
+	border-radius: 0.3vmax;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+}
