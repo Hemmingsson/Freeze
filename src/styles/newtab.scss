@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+body {
+    margin: 0;
+  	height: 100vh;
+  	font-family: 'Rubik', sans-serif;
+  	font-weight: 500;
+  	overflow: hidden;
+  	display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none; 
+ }
+
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    transition: opacity 400ms;
+    filter: contrast(0.85) brightness(.92) saturate(1) hue-rotate(-20deg);
+    &.loading{
+    	opacity: 0;
+    }
+}
+
+.link{
+	position: absolute;
+  bottom: 0;
+  padding: 0.6vmin;
+  color: white;
+  font-family: monospace;
+  opacity: 0.4;
+  transition: 100ms;
+  text-decoration: none;
+  &:hover{
+  	opacity: 1;
+  }
+
+}
+
+.console{
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255, 0.7);
+	padding: 10px;
+	font-size: 12px;
+	opacity: 0;
+}
+
+.clock{
+	display: relative;
+	position: absolute;
+	z-index: 100;
+	font-size: 8vmax;
+	color: white;
+	//border: 0.8vw solid white;
+	box-shadow: 0px 0px 0px 0.8vmax #fff; 
+	padding: 0.2vmax 1.5vmax;
+	border-radius: 0.3vmax;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+}
