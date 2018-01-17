@@ -44,9 +44,8 @@ storage.get('clockHidden', function (resp) {
   var clockHidden = resp.clockHidden
   var option
 
-  clockTypeVisibillity(clockHidden)
-
   if (clockHidden) {
+    clockTypeVisibillity(clockHidden)
     for (var i = 0; i < clockHiddenRadios.length; i++) {
       if (clockHiddenRadios[i].value == clockHidden) {
         option = clockHiddenRadios[i]

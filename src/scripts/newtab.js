@@ -38,7 +38,26 @@ var setFilter = function () {
   })
 }
 
-chrome.storage.onChanged.addListener(setFilter)
+var setClock = function () {
+  var clockElm = document.querySelectorAll('.clock')[0]
+  storage.get('clockHidden', function (resp) {
+    var clockHidden = resp.clockHidden
+    if (clockHidden) {
+      if (clockHidden === 'true') {
+        clockElm.style.opacity = '1'
+      } else {
+        clockElm.style.opacity = '0'
+      }
+    } else {
+      clockElm.style.opacity = '1'
+    }
+  })
+}
+
+chrome.storage.onChanged.addListener(function () {
+  setFilter()
+  setClock()
+})
 
 /* ==========================================================================
    Init
@@ -49,6 +68,7 @@ var init = async function () {
   initPlayer()
   clock.init('.time')
   setFilter()
+  setClock()
   imageData = await db.syncDataBase()
   loadBackground()
 }
