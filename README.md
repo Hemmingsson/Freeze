@@ -22,7 +22,6 @@ Curated Cinemagraphs on Every New Tab
 The following tasks can be used when you want to start developing the extension and want to enable live reload - 
 
 - `npm run chrome-watch`
-- `npm run opera-watch`
 - `npm run firefox-watch`
 
 ### Packaging
