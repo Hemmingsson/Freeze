@@ -8,11 +8,10 @@ Curated Cinemagraphs on Every New Tab
 2. Run `npm install`
 3. Run `npm run build`
 
-##### Load the extension in Chrome & Opera
-1. Open Chrome/Opera browser and navigate to chrome://extensions
+##### Load the extension in Chrome
+1. Open Chrome browser and navigate to chrome://extensions
 2. Select "Developer Mode" and then click "Load unpacked extension..."
-3. From the file browser, choose to `extension-boilerplate/build/chrome` or (`extension-boilerplate/build/opera`)
-
+3. From the file browser, choose to `extension-boilerplate/build/chrome`
 
 ##### Load the extension in Firefox
 1. Open Firefox browser and navigate to about:debugging

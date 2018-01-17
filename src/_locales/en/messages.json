@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Downtime - New Tab Cinemagraphs",
-    "description": "THIS IS THE DESCRIPTION"
+    "message": "Downtime",
+    "description": "Curated Cinemagraphs on Every New Tab"
   },
   "appDescription": {
-    "message": "Boilerplate for building cross browser extensions",
-    "description": "The description of the extension."
+    "message": "Curated Cinemagraphs on Every New Tab",
+    "description": "Curated Cinemagraphs on Every New Tab"
   }
 }
