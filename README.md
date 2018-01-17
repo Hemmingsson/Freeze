@@ -31,7 +31,8 @@ Run `npm run dist` to create a zipped, production-ready extension for each brows
 
 ## Credits
 
-downtime was made with :
+### Downtime was made with :
 
-- Extension Boilerplate from Bharani: https://github.com/EmailThis/extension-boilerplate
-- Cinemagraphs sourced from: https://imgur.com
+- [Extension Boilerplate](https://github.com/EmailThis/extension-boilerplate)
+- [instagram.css](https://github.com/picturepan2/instagram.css)
+- Cinemagraphs sourced from [imgur.com](https://imgur.com)
