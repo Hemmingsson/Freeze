@@ -1,5 +1,5 @@
-# downtime
-Curated Cinemagraphs on Every New Tab
+# Freeze - New Tab Page
+Get a Curated Cinemagraph Each Time You Open a New Tab
 
 
 ## Running Dev Environement

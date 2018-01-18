@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Downtime",
-    "description": "Curated Cinemagraphs on Every New Tab"
+    "message": "Freeze - New Tab Page",
+    "description": "Curated Cinemagraph on Every New Tab"
   },
   "appDescription": {
-    "message": "Curated Cinemagraphs on Every New Tab",
-    "description": "Curated Cinemagraphs on Every New Tab"
+    "message": "Get a Curated Cinemagraph Each Time You Open a New Tab",
+    "description": "Get a Curated Cinemagraph Each Time You Open a New Tab"
   }
 }

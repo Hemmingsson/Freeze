@@ -106,22 +106,18 @@ video {
 
     color: white;
     border-radius: .3vmax;
-    background-color: rgba(0, 0, 0, .1);
     box-shadow: 0 0 0 .8vmax #fff;
 }
 
 
 .analog-clock {
     position: relative;
-
-    width: 50vmin;
-    height: 50vmin;
-    margin: 50px auto;
-    padding: 2rem;
+    width: 35vmin;
+    height: 35vmin;
+    padding: 1vmin;
 
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, .1);
-    box-shadow: inset 0 0 0 1vmin #fff;
+    box-shadow: 0 0 0 .8vmax #fff;
 }
 
 .analog-clock-face {
@@ -130,32 +126,36 @@ video {
     width: 100%;
     height: 100%;
 
-    transform: translateY(.5vmin);
+    transform: translateY(-.4vmax);
 
     .hand {
         position: absolute;
         top: 50%;
 
         width: 50%;
-        height: 1vmin;
+        height: .8vmax;
 
-        transition: all 130ms cubic-bezier(.645, .045, .355, 1);
+        transition: all 60ms cubic-bezier(.645, .045, .355, 1);
         transform: rotate(90deg);
         transform-origin: right;
 
         background-color: #fff;
     }
-    &:after{
-      content: '';
-      position: absolute;
-      display: block;
-      width: 1.1vmin;
-      height: 1.1vmin;
-      border-radius: 100%;
-      background-color: white;
+    &:after {
         position: absolute;
-      top: calc(50% + 0.5vmin);
-      left: 50%;
-  transform: translate(-50%, -50%);
+        position: absolute;
+        top: calc(50% + .4vmax);
+        left: calc(50%);
+
+        display: block;
+
+        width: .8vmax;
+        height: .8vmax;
+
+        content: '';
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        background-color: white;
     }
 }

@@ -101,7 +101,7 @@ var updateClock = function (twelwClock, digitsElm, secondHandElm, minuteHandElm,
   if (secondDegrees === 444 || secondDegrees === 90) {
     secondHandElm.style.transition = 'all 0s ease 0s'
   } else {
-    secondHandElm.style.transition = 'all 130ms cubic-bezier(0.645, 0.045, 0.355, 1)'
+    secondHandElm.style.transition = 'all 60ms cubic-bezier(0.645, 0.045, 0.355, 1)'
   }
 
   // Digital Clock

@@ -127,9 +127,10 @@ input[type='radio']:checked + label:before {
 
 footer {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0.2rem 0 0.6rem;
     color: #8a8a8a;
     text-align: center;
+    
     a{
         color: black;
     }  
