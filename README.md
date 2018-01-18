@@ -34,4 +34,4 @@ Run `npm run dist` to create a zipped, production-ready extension for each brows
 
 - [Extension Boilerplate](https://github.com/EmailThis/extension-boilerplate)
 - [instagram.css](https://github.com/picturepan2/instagram.css)
-- Cinemagraphs sourced from [imgur.com](https://imgur.com)
+- Cinemagraphs sourced from [imgur.com](https://imgur.com) and [r/Cinemagraphs](https://www.reddit.com/r/Cinemagraphs/)
