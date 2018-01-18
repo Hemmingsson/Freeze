@@ -1,49 +1,113 @@
 import storage from './storage'
+import ext from './ext'
 
 /* ==========================================================================
    Clock
    ========================================================================== */
 
-var clockType12 = false
+exports.init = function () {
+  getAndSetClock()
+  ext.storage.onChanged.addListener(getAndSetClock)
+}
 
-exports.init = function (selector) {
-  var elm = document.querySelectorAll(selector)[0]
+var clockActive
+
+var getAndSetClock = function () {
+  var digiClock = document.querySelector('.digi-clock')
+  var analogClock = document.querySelector('.analog-clock')
 
   storage.get('clockType', function (resp) {
-    var clockType = resp.clockType
-    if (clockType === '12') { clockType12 = true }
-    clock(elm, clockType12)
-    setInterval(function () { clock(elm, clockType12) }, 1000)
+    if (clockActive) {
+      clearTimeout(clockActive)
+    }
 
-    chrome.storage.onChanged.addListener(function () {
-      storage.get('clockType', function (resp) {
-        var clockType = resp.clockType
-        if (clockType === '12') { clockType12 = true } else { clockType12 = false }
-        clock(elm, clockType12)
-      })
-    })
+    var clockType = resp.clockType
+
+    var twelwClock
+
+    if (clockType === '24') {
+      twelwClock = false
+    } else {
+      twelwClock = true
+    }
+
+    console.log(twelwClock)
+
+    if (clockType === 'analog') {
+      analogClock.classList.remove('hidden')
+      digiClock.classList.add('hidden')
+    } else {
+      analogClock.classList.add('hidden')
+      digiClock.classList.remove('hidden')
+    }
+
+    if (clockType === 'hidden') {
+      analogClock.classList.add('hidden')
+      digiClock.classList.add('hidden')
+    }
+    startClock(twelwClock)
   })
 }
 
-var clock = function (elm, clockType12) {
+var startClock = function (twelwClock) {
+  var digitsElm = document.querySelector('.time')
+
+  var secondHandElm = document.querySelector('.second-hand')
+  var minuteHandElm = document.querySelector('.minute-hand')
+  var hourHandElm = document.querySelector('.hour-hand')
+
+  updateClock(twelwClock, digitsElm, secondHandElm, minuteHandElm, hourHandElm)
+
+  var updater = function () {
+    console.log('update')
+    updateClock(twelwClock, digitsElm, secondHandElm, minuteHandElm, hourHandElm)
+    clockActive = setTimeout(updater, 1000)
+  }
+  updater()
+}
+
+var updateClock = function (twelwClock, digitsElm, secondHandElm, minuteHandElm, hourHandElm) {
+  // Das time
   var time = new Date()
   var hours = time.getHours()
-  console.log('second')
   var minutes = time.getMinutes()
+  var seconds = time.getSeconds()
 
-  if (clockType12) {
+  // Conver to 12h Clock
+
+  if (twelwClock) {
     if (hours > 12) {
       hours = hours - 12
     }
-    if (hours == 0) {
+    if (hours === 0) {
       hours = 12
     }
   } else {
     hours = harold(hours)
   }
-  minutes = harold(minutes)
 
-  elm.innerText = hours + ':' + minutes
+  // Analog Clock
+
+  var secondDegrees = ((seconds / 60) * 360) + 90
+  secondHandElm.style.transform = `rotate(${secondDegrees}deg)`
+
+  var minuteDegrees = ((minutes / 60) * 360) + 90
+  minuteHandElm.style.transform = `rotate(${minuteDegrees}deg)`
+
+  var hourDegrees = ((hours / 12) * 360) + 90
+  hourHandElm.style.transform = `rotate(${hourDegrees}deg)`
+  console.log(hours)
+
+  if (secondDegrees === 444 || secondDegrees === 90) {
+    secondHandElm.style.transition = 'all 0s ease 0s'
+  } else {
+    secondHandElm.style.transition = 'all 130ms cubic-bezier(0.645, 0.045, 0.355, 1)'
+  }
+
+  // Digital Clock
+
+  minutes = harold(minutes)
+  digitsElm.innerText = hours + ':' + minutes
 }
 
 var harold = function (standIn) {

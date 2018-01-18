@@ -1,83 +1,161 @@
-@import "instagram.css";
+@import 'instagram.css';
 @import url('https://fonts.googleapis.com/css?family=Rubik:500');
 
 body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 100vh;
     margin: 0;
-  	height: 100vh;
-  	font-family: 'Rubik', sans-serif;
-  	font-weight: 500;
-  	overflow: hidden;
-  	display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none; 
- }
+
+    user-select: none;
+
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-.video-contain {
+.video-wrapper {
     position: absolute;
     top: -50%;
     left: -50%;
+
     width: 200%;
     height: 200%;
+
+    transition: opacity 300ms;
     pointer-events: none;
+    &.loading {
+        opacity: 0;
+    }
+}
+
+.filter {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 video {
     position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
-    margin: auto;
-    min-height: 50%;
+
     min-width: 50%;
-    transition: opacity 400ms;
-    &.loading{
-    	opacity: 0;
+    min-height: 50%;
+    margin: auto;
+}
+
+.link {
+    font-family: monospace;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: .6vmin;
+
+    transition: 100ms;
+    text-decoration: none;
+
+    opacity: .4;
+    color: white;
+    &:hover {
+        opacity: 1;
     }
 }
 
-.link{
-	position: absolute;
-  bottom: 0;
-  padding: 0.6vmin;
-  color: white;
-  font-family: monospace;
-  opacity: 0.4;
-  transition: 100ms;
-  text-decoration: none;
-  &:hover{
-  	opacity: 1;
-  }
+.console {
+    font-size: 18px;
+    font-size: 12px;
 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 10px;
+
+    opacity: 0;
+    background-color: rgba(255,255,255, .7);
 }
 
-.console{
-	font-size: 18px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(255,255,255, 0.7);
-	padding: 10px;
-	font-size: 12px;
-	opacity: 0;
+.hidden {
+    display: none;
 }
 
-.clock{
-	display: relative;
-	position: absolute;
-	z-index: 100;
-	font-size: 8vmax;
-	color: white;
-	//border: 0.8vw solid white;
-	box-shadow: 0px 0px 0px 0.8vmax #fff; 
-	padding: 0.2vmax 1.5vmax;
-	border-radius: 0.3vmax;
-	font-weight: 500;
-	line-height: 1;
-	text-transform: uppercase;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+.digi-clock {
+    font-size: 8vmax;
+    font-weight: 500;
+    line-height: 1;
+
+    position: absolute;
+    z-index: 100;
+
+    display: relative;
+
+    padding: .2vmax 1.2vmax;
+
+    text-transform: uppercase;
+
+    color: white;
+    border-radius: .3vmax;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 0 .8vmax #fff;
+}
+
+
+.analog-clock {
+    position: relative;
+
+    width: 50vmin;
+    height: 50vmin;
+    margin: 50px auto;
+    padding: 2rem;
+
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 0 1vmin #fff;
+}
+
+.analog-clock-face {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(.5vmin);
+
+    .hand {
+        position: absolute;
+        top: 50%;
+
+        width: 50%;
+        height: 1vmin;
+
+        transition: all 130ms cubic-bezier(.645, .045, .355, 1);
+        transform: rotate(90deg);
+        transform-origin: right;
+
+        background-color: #fff;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1.1vmin;
+      height: 1.1vmin;
+      border-radius: 100%;
+      background-color: white;
+        position: absolute;
+      top: calc(50% + 0.5vmin);
+      left: 50%;
+  transform: translate(-50%, -50%);
+    }
 }

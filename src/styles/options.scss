@@ -1,50 +1,139 @@
-@import "instagram.css";
+$border: 2px solid black;
+$spacing: 10px;
+$window-width: 600px;
 
-
-body{
-	padding: 10px;
-	margin: 0;
-	width: 500px;
-}	
-
-
-.preview{
-  	width: calc(100vw - 20px);
-	height: calc(100vw * 8/16);
-	overflow: hidden;
-	position: relative;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	user-select: none; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.video-contain{
-	position: relative;
+body {
+    display: flex;
+    overflow: hidden;
+
+    width: $window-width;
+    margin: 0 auto;
+    padding: $spacing;
+
+    justify-content: center;
+    align-items: center;
 }
 
-video {
-    height: 100%;
-    width: 177.77777778vh; /* 100 * 16 / 9 */
-    min-width: 100%;
-    min-height: 56.25vw; /* 100 * 9 / 16 */
+.container {
+    width: 100%;
+
+    border: 2px solid black;
 }
 
-.disabeld{
-	opacity: 0.5;
-	pointer-events: none;
+.disabeld {
+    pointer-events: none;
+
+    opacity: .5;
 }
 
-.clock{
-	position: absolute;
-	z-index: 100;
-	font-size: 8vmax;
-	color: white;
-	box-shadow: 0px 0px 0px 0.8vmax #fff; 
-	padding: 0.2vmax 1.5vmax 0.5vmax 1.5vmax;
-	border-radius: 0.3vmax;
-	font-weight: 500;
-	line-height: 1;
-	text-transform: uppercase;
-	transition: opacity 200ms;
+.preview {
+    width: calc(#{$window-width} - 4px - #{$spacing} * 2);
+    height: calc(#{$window-width} * 7.5/16);
+    margin-bottom: -3px;
+
+    pointer-events: none;
+
+    border: none;
+}
+
+.settings {
+    display: flex;
+
+    width: 100;
+
+    border-top: $border;
+    border-bottom: $border;
+    .column {
+        width: 50%;
+        padding: $spacing * 1.5;
+        &:first-child {
+            border-right: $border;
+        }
+    }
+}
+
+.radio {
+    font-size: 12px;
+
+    padding: .5em 0;
+}
+
+h3 {
+    margin-bottom: $spacing;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+select {
+    width: 100%;
+
+    border: $border;
+    border-radius: 0;
+    option {
+        font-size: 12px;
+
+        padding: .5em 1em;
+    }
+}
+
+select[multiple]:focus {
+    outline: none;
+    option {
+        &:checked {
+            color: white;
+            background: black linear-gradient(0deg, black 0%, black 100%);
+        }
+    }
+}
+
+
+input[type='radio'] {
+    position: absolute;
+
+    opacity: 0;
+}
+
+input[type='radio'] + label {
+    position: relative;
+
+    padding: 0 0 0 2em;
+}
+
+input[type='radio'] + label:before {
+    position: absolute;
+
+    display: block;
+
+    width: 1em;
+    height: 1em;
+
+    content: '';
+
+    border: $border;
+    border-radius: 100%;
+    background: white;
+    box-shadow: inset 0 0 0 2px white;
+}
+
+input[type='radio']:checked + label:before {
+    background: black;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    color: #8a8a8a;
+    text-align: center;
+    a{
+        color: black;
+    }  
+    .emoji{
+        font-size: 1.6em;
+    }
 }

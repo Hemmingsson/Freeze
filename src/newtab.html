@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Webpack Magic -->
-    <link rel="stylesheet" href="styles/newtab.css">
-  </head>
-  <body>
-    <div class="video-contain">
-      <video loop autoplay preload="auto" class="loading">
-      </video>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Webpack Magic -->
+  <link rel="stylesheet" href="styles/newtab.css">
+</head>
+
+<body>
+  <div class="video-wrapper loading">
+    <video loop autoplay preload="auto">
+    </video>
+  </div>
+  <div class="console">
+    <p class="number"><span></span> / <span></span></p>
+    <p class="id"><span></span></p>
+    <p class="saved">❤️ <span></span></p>
+    <p class="trashed">🗑 <span></span></p>
+  </div>
+  <a class="link" href="#"></a>
+  <div class="digi-clock hidden">
+    <span class="time"></span>
+  </div>
+
+  <div class="analog-clock hidden">
+    <div class="analog-clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand minute-hand"></div>
+      <div class="hand second-hand"></div>
     </div>
-    <div class="console">
-      <p class="number"><span></span> / <span></span></p>
-      <p class="id"><span></span></p>
-      <p class="saved">❤️ <span></span></p>
-      <p class="trashed">🗑 <span></span></p>
-    </div>
-    <a class="link" href="#">FITTA</a>
-    <div class="clock">
-      <span class="time"></span>
-    </div>
-    <script src="scripts/newtab.js"></script>
-  </body>
+  </div>
+
+  <script src="scripts/newtab.js"></script>
+</body>
+
 </html>
