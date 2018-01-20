@@ -1,7 +1,7 @@
 # Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 Get a Curated Cinemagraph Each Time You Open a New Tab
 
-<img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" alt="Filter Options" width="900">
+<img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" width="900">
 
 ## Features
 
@@ -24,18 +24,18 @@ You can install Freeze through the Chrome web store:
 
 ## Running Dev Environement
 ### Installation
-1. Clone the repository `git clone https://github.com/Hemmingsson/downtime-extension`
+1. Clone the repository `git clone https://github.com/Hemmingsson/Freeze`
 2. Run `npm install`
 3. Run `npm run build`
 
 ##### Load the extension in Chrome
 1. Open Chrome browser and navigate to chrome://extensions
 2. Select "Developer Mode" and then click "Load unpacked extension..."
-3. From the file browser, choose to `extension-boilerplate/build/chrome`
+3. From the file browser, choose to `Freeze/build/chrome`
 
 ##### Load the extension in Firefox
 1. Open Firefox browser and navigate to about:debugging
-2. Click "Load Temporary Add-on" and from the file browser, choose `extension-boilerplate/build/firefox`
+2. Click "Load Temporary Add-on" and from the file browser, choose `Freeze/build/firefox`
 
 
 ### Developing
