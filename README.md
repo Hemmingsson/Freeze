@@ -1,5 +1,7 @@
-# Freeze - New Tab Page
+# Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd.)
 Get a Curated Cinemagraph Each Time You Open a New Tab
+
+![Screen Shot](https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif)
 
 
 ## Running Dev Environement
