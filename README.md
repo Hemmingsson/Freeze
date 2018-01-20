@@ -1,7 +1,14 @@
 # Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 Get a Curated Cinemagraph Each Time You Open a New Tab
 
+<img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" alt="Filter Options" width="900">
 
+
+## How to install
+
+You can install Freeze through the Chrome web store: 
+
+[![Install Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 ## Features
 
@@ -13,13 +20,8 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 
 ⏲ New image every new tab, 5min, 15min, 30min hourly or daily
 
-<img src="https://media.giphy.com/media/26CaNh8tkfqqe6JMY/giphy.gif" alt="Filter Options" width="400"> <img src="https://media.giphy.com/media/l49JDTD4iYezlOobm/giphy.gif" alt="Filter Options" width="400">
+<img src="https://media.giphy.com/media/26CaNh8tkfqqe6JMY/giphy.gif" alt="Filter Options" width="430"> <img src="https://media.giphy.com/media/l49JDTD4iYezlOobm/giphy.gif" alt="Filter Options" width="430">
 
-## How to install
-
-You can install Freeze through the Chrome web store: 
-
-[![Install Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 
 ## Running Dev Environement
