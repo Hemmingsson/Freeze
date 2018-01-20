@@ -1,5 +1,5 @@
 # Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
-Get a Curated Cinemagraph Each Time You Open a New Tab
+A Curated Cinemagraph Each Time You Open a New Tab
 
 <img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" width="900">
 
