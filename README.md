@@ -3,6 +3,22 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 
 ![Screen Shot](https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif)
 
+## Features
+🎆 150+ cinemagraphs
+
+🕑 12h clock, 24h clock, analog or no clock
+
+🕶️ Image Filters to unify cinemagraphs style
+
+
+⏲ New image every new tab, 5min, 15min, 30min hourly or daily
+
+## How to install
+
+You can install Freeze through the Chrome web store: 
+
+[![Install Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
+
 
 ## Running Dev Environement
 ### Installation
