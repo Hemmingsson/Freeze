@@ -6,7 +6,7 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 ## Features
 🎆 150+ cinemagraphs
 
-🕑 12h clock, 24h clock, analog or no clock
+🕑 12h clock, 24h clock, analog clock or no clock
 
 🕶️ Image Filters to unify cinemagraphs style
 
