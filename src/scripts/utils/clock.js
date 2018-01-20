@@ -59,7 +59,6 @@ var startClock = function (twelwClock) {
   updateClock(twelwClock, digitsElm, secondHandElm, minuteHandElm, hourHandElm)
 
   var updater = function () {
-    console.log('update')
     updateClock(twelwClock, digitsElm, secondHandElm, minuteHandElm, hourHandElm)
     clockActive = setTimeout(updater, 1000)
   }
@@ -96,7 +95,6 @@ var updateClock = function (twelwClock, digitsElm, secondHandElm, minuteHandElm,
 
   var hourDegrees = ((hours / 12) * 360) + 90
   hourHandElm.style.transform = `rotate(${hourDegrees}deg)`
-  console.log(hours)
 
   if (secondDegrees === 444 || secondDegrees === 90) {
     secondHandElm.style.transition = 'all 0s ease 0s'

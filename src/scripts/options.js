@@ -1,51 +1,46 @@
 import ext from './utils/ext'
 import storage from './utils/storage'
+import ga from './utils/ga'
 
 /* ==========================================================================
-   Clock Type
+   Refresh Preview
    ========================================================================== */
 
-var clockTypeRadio = document.querySelectorAll('.clock-type input')
-
-storage.get('clockType', function (resp) {
-  var clockType = resp.clockType
-  var option
-
-  if (clockType) {
-    for (var i = 0; i < clockTypeRadio.length; i++) {
-      if (clockTypeRadio[i].value == clockType) {
-        option = clockTypeRadio[i]
-      }
-    }
-  } else {
-    option = clockTypeRadio[0]
-  }
-
-  option.setAttribute('checked', 'checked')
+document.querySelector('.preview-wrapper').addEventListener('click', function (e) {
+  storage.set({timerAge: 0})
+  document.querySelector('.preview').contentWindow.location.reload()
 })
 
-clockTypeRadio.forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    var value = this.value
-    storage.set({ clockType: value })
+var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1
+
+if (isFirefox) {
+  document.querySelector('.filter').parentElement.style.display = 'none'
+}
+
+/* ==========================================================================
+   Get and set Options
+   ========================================================================== */
+
+var getSetOption = function (selector, storageName) {
+  var selectElm = document.querySelectorAll(selector)[0]
+  var change = new Event('change')
+  selectElm.addEventListener('change', function () {
+    var storageObj = {}
+    storageObj[storageName] = this.value
+    storage.set(storageObj)
+    storage.set({timerAge: Date.now()})
   })
-})
 
-/* ==========================================================================
-   Filters
-   ========================================================================== */
+  storage.get(storageName, function (resp) {
+    var item = resp[storageName]
+    if (item) {
+      selectElm.value = item
+      selectElm.dispatchEvent(change)
+    }
+  })
+}
 
-var change = new Event('change')
-var filterSelect = document.querySelectorAll('.filter')[0]
-filterSelect.addEventListener('change', function () {
-  storage.set({ filter: this.value })
-})
-
-storage.get('filter', function (resp) {
-  var filter = resp.filter
-  if (filter) {
-    filterSelect.value = filter
-    filterSelect.dispatchEvent(change)
-  }
-})
-
+getSetOption('.filter', 'filter')
+getSetOption('.timer', 'timer')
+getSetOption('.clock-type', 'clockType')
+ga.init()

@@ -21,7 +21,6 @@ var manifest = {
   dev: {
     'background': {
       'scripts': [
-        'scripts/livereload.js'
       ]
     }
   },
@@ -45,10 +44,8 @@ gulp.task('build', (cb) => {
 })
 
 gulp.task('watch', ['build'], () => {
-  $.livereload.listen()
-
   gulp.watch(['./src/**/*']).on('change', () => {
-    $.runSequence('build', $.livereload.reload)
+    $.runSequence('build')
   })
 })
 
@@ -124,7 +121,6 @@ function buildJS (target) {
   const files = [
     'options.js',
     'popup.js',
-    'livereload.js',
     'newtab.js'
   ]
 
@@ -139,16 +135,11 @@ function buildJS (target) {
       context: context
     })
     .bundle()
+
     .pipe(source(file))
     .pipe(buffer())
     .pipe(gulpif(!production, $.sourcemaps.init({ loadMaps: true })))
     .pipe(gulpif(!production, $.sourcemaps.write('./')))
-    .pipe(gulpif(production, $.uglify({
-      'mangle': false,
-      'output': {
-        'ascii_only': true
-      }
-    })))
     .pipe(gulp.dest(`build/${target}/scripts`))
   })
 

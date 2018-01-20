@@ -10,32 +10,36 @@
 
 <body>
   <div class="container">
+    <section class="preview-wrapper">
     <iframe class="preview" src="newtab.html">
     </iframe>
+  </section>
     <section class="settings">
-      <div class="column clock-type">
-        <h3>Clock Type</h3>
-        <div class="radio">
-          <input type="radio" id="c1" name="clockType" value="24">
-          <label for="c1">24 Hour</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="c2" name="clockType" value="12">
-          <label for="c2">12 Huor</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="c3" name="clockType" value="analog">
-          <label for="c3">Analog</label>
-        </div>
-        <div class="radio">
-          <input type="radio" id="c4" name="clockType" value="hidden">
-          <label for="c4">Disable</label>
-        </div>
+      <div class="column">
+        <h3>New Every</h3>
+        <select size="4" class="timer">
+          <option value="0" selected>New Tab</option>
+          <option value="5">5 Minutes</option>
+          <option value="15">15 Minutes</option>
+          <option value="30">30 Minutes</option>
+          <option value="60">Hour</option>
+          <option value="1440">Day</option>
+        </select>
       </div>
       <div class="column">
+        <h3>Clock Type</h3>
+        <select size="4" class="clock-type">
+          <option value="12" selected>12 Hour</option>
+          <option value="24">24 Hour</option>
+          <option value="analog">Analog</option>
+          <option value="hidden">Hidden</option>
+        </select>
+      </div>
+      
+      <div class="column">
         <h3>Image Filter</h3>
-        <select multiple class="filter">
-          <option value="none">None</option>
+        <select size="4" class="filter">
+          <option value="none" selected>None</option>
           <option value="filter-1977">1977</option>
           <option value="filter-aden">Aden</option>
           <option value="filter-amaro">Amaro</option>

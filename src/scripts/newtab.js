@@ -1,5 +1,6 @@
 
 import ext from './utils/ext'
+import storage from './utils/storage'
 import db from './utils/syncDB'
 import clock from './utils/clock'
 import filter from './utils/filter'
@@ -15,6 +16,4 @@ var init = async function () {
   var imageData = await db.syncDataBase()
   backgroundVideo.init(imageData)
 }
-
 init()
-

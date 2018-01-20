@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
 $border: 2px solid black;
 $spacing: 10px;
 $window-width: 600px;
@@ -18,6 +20,7 @@ body {
 
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .container {
@@ -25,11 +28,8 @@ body {
 
     border: 2px solid black;
 }
-
-.disabeld {
-    pointer-events: none;
-
-    opacity: .5;
+.preview-wrapper{
+    margin-bottom: -3px;
 }
 
 .preview {
@@ -50,24 +50,20 @@ body {
     border-top: $border;
     border-bottom: $border;
     .column {
-        width: 50%;
-        padding: $spacing * 1.5;
-        &:first-child {
-            border-right: $border;
-        }
+        flex-grow: 1;
+        padding: $spacing;
     }
 }
 
-.radio {
-    font-size: 12px;
-
-    padding: .5em 0;
-}
 
 h3 {
     margin-bottom: $spacing;
+    margin-top: $spacing / 2;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
 }
 
 select {
@@ -80,9 +76,7 @@ select {
 
         padding: .5em 1em;
     }
-}
-
-select[multiple]:focus {
+    &:focus {
     outline: none;
     option {
         &:checked {
@@ -91,46 +85,16 @@ select[multiple]:focus {
         }
     }
 }
-
-
-input[type='radio'] {
-    position: absolute;
-
-    opacity: 0;
 }
 
-input[type='radio'] + label {
-    position: relative;
-
-    padding: 0 0 0 2em;
-}
-
-input[type='radio'] + label:before {
-    position: absolute;
-
-    display: block;
-
-    width: 1em;
-    height: 1em;
-
-    content: '';
-
-    border: $border;
-    border-radius: 100%;
-    background: white;
-    box-shadow: inset 0 0 0 2px white;
-}
-
-input[type='radio']:checked + label:before {
-    background: black;
-}
 
 footer {
     width: 100%;
     padding: 0.2rem 0 0.6rem;
     color: #8a8a8a;
     text-align: center;
-    
+    font-size: 14px;
+
     a{
         color: black;
     }  
