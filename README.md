@@ -9,7 +9,7 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
-🕶️ Image Filters to unify cinemagraphs style
+🕶️ Image Filters to unify cinemagraphs style (Chrome only)
 
 ⏲ New image every new tab, 5min, 15min, 30min hourly or daily
 
