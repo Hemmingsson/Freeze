@@ -5,7 +5,7 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 
 ## Features
 
-🎆 150+ cinemagraphs
+🎆 150+ Curated Cinemagraphs
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
@@ -39,13 +39,10 @@ You can install Freeze through the Chrome web store:
 
 
 ### Developing
-The following tasks can be used when you want to start developing the extension and want to enable live reload - 
+The following tasks can be used when you want to start developing the extension
 
 - `npm run chrome-watch`
 - `npm run firefox-watch`
-
-### Packaging
-Run `npm run dist` to create a zipped, production-ready extension for each browser. You can then upload that to the appstore.
 
 
 ## Credits
