@@ -15,10 +15,13 @@ Get a Curated Cinemagraph Each Time You Open a New Tab
 
 ## How to install
 
+### Chrome
 You can install Freeze through the Chrome web store: 
 
 [![Install Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
+### Firefox
+Extension pending review
 
 
 
