@@ -1,17 +1,19 @@
 # Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 Get a Curated Cinemagraph Each Time You Open a New Tab
 
-![Screen Shot](https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif)
+
 
 ## Features
+
 🎆 150+ cinemagraphs
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
 🕶️ Image Filters to unify cinemagraphs style
 
-
 ⏲ New image every new tab, 5min, 15min, 30min hourly or daily
+
+<img src="https://media.giphy.com/media/26CaNh8tkfqqe6JMY/giphy.gif" alt="Filter Options" width="400"> <img src="https://media.giphy.com/media/l49JDTD4iYezlOobm/giphy.gif" alt="Filter Options" width="400">
 
 ## How to install
 
