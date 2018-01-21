@@ -1,18 +1,22 @@
 
+<h1 align="center">
+  <br><img src="src/icons/icon-128.png?raw=true" alt="Markdownify" width="128">
+  <br>
+  Freeze - New Tab Page 
+  <br>
+</h1>
 
-[<img align="right" src="https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg">](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
-[<img align="right" src="https://img.shields.io/amo/v/freeze-new-tab-page.svg">](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+<h4 align="center">A Curated Cinemagraph Each Time You Open a New Tab</h4>
 
-
-
-
-#   Freeze - New Tab Page 
-[<img align="center" src="src/icons/icon-38.png?raw=true">](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
- A Curated Cinemagraph Each Time You Open a New Tab
-
-
-
-
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
+    <img align="center" src="https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg">
+  </a>
+  <a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
+    <img align="center" src="https://img.shields.io/amo/v/freeze-new-tab-page.svg">
+</p>
+ 
+  
 <img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" width="900">
 
 ## Features
