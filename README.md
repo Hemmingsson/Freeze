@@ -1,4 +1,4 @@
-# Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)[![Version](https://img.shields.io/amo/v/freeze-new-tab-page.svg)](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+# Freeze - New Tab Page [![Version](https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd) [![Version](https://img.shields.io/amo/v/freeze-new-tab-page.svg)](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 A Curated Cinemagraph Each Time You Open a New Tab
 
 
