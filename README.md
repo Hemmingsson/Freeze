@@ -24,12 +24,14 @@ A Curated Cinemagraph Each Time You Open a New Tab
 ## How to install
 
 ### Chrome
-You can install Freeze through the Chrome web store: 
+You can install Freeze through the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
-[![Install Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
+[![Install Extension](https://i.imgur.com/3OQ4CiQ.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 ### Firefox
-Extension pending review
+You can install from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+
+[![Install Add-on](https://i.imgur.com/fhrgN7g.png)](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
 
 
