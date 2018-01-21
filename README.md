@@ -14,6 +14,7 @@
   </a>
   <a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
     <img align="center" src="https://img.shields.io/amo/v/freeze-new-tab-page.svg">
+  </a>
 </p>
  
   
@@ -32,14 +33,21 @@
 ## How to install
 
 ### Chrome
+<a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
+    <img align="right" src="https://i.imgur.com/3OQ4CiQ.png">
+ </a>
+ 
 You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
-[![Install Extension](https://i.imgur.com/3OQ4CiQ.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 ### Firefox
+
+<a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
+    <img align="right" src="https://i.imgur.com/fhrgN7g.png">
+  </a>
+  
 You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
-[![Install Add-on](https://i.imgur.com/fhrgN7g.png)](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
 
 
