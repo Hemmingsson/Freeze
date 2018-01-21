@@ -1,10 +1,14 @@
+
+
 [<img align="right" src="https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg">](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 [<img align="right" src="https://img.shields.io/amo/v/freeze-new-tab-page.svg">](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
 
-# Freeze - New Tab Page
-A Curated Cinemagraph Each Time You Open a New Tab
 
+
+#   Freeze - New Tab Page 
+[<img align="center" src="src/icons/icon-38.png?raw=true">](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+ A Curated Cinemagraph Each Time You Open a New Tab
 
 
 
