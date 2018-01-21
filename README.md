@@ -33,21 +33,23 @@
 ## How to install
 
 ### Chrome
+<p align="right">
 <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
     <img align="right" src="https://i.imgur.com/3OQ4CiQ.png">
  </a>
+ </p>
  
 You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 
 ### Firefox
+<p align="right">
 <a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
     <img align="right" src="https://i.imgur.com/fhrgN7g.png">
  </a>
+  </p>
  
 You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
-
-
 
 
 ## Running Dev Environement
