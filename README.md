@@ -21,19 +21,19 @@
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
-🕶️ Image Filters to unify cinemagraphs style (Chrome only)
+🕶️ Image filters to unify cinemagraphs style (Chrome only)
 
 ⏲ New image every new tab, 5min, 15min, 30min hourly or daily
 
 ## How to install
 
 ### Chrome
-You can install Freeze through the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
+You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 [![Install Extension](https://i.imgur.com/3OQ4CiQ.png)](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 ### Firefox
-You can install from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
 [![Install Add-on](https://i.imgur.com/fhrgN7g.png)](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
 
