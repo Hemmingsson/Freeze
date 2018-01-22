@@ -17,8 +17,10 @@
   </a>
 </p>
  
-  
-<img src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif" width="900">
+<p align="center">
+<img align="center" src="https://media.giphy.com/media/xULW8o7cDuFP75Jnm8/giphy.gif">
+</p>
+
 
 ## Features
 
