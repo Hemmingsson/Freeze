@@ -12,7 +12,7 @@
   <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
     <img align="center" src="https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg">
   </a>
-  <a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
+  <a href="https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/">
     <img align="center" src="https://img.shields.io/amo/v/freeze-new-tab-page.svg">
   </a>
 </p>
