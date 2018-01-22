@@ -37,9 +37,13 @@ var getDataBaseFromStorage = function () {
 var isDataBaseOlderThen = function (milliseconds) {
   return new Promise(async function (resolve) {
     storage.get('age', function (resp) {
-      var difference = Date.now() - resp.age
-      if (difference < milliseconds) {
-        resolve(false)
+      if (resp) {
+        var difference = Date.now() - resp.age
+        if (difference < milliseconds) {
+          resolve(false)
+        } else {
+          resolve(true)
+        }
       } else {
         resolve(true)
       }
@@ -50,12 +54,13 @@ var isDataBaseOlderThen = function (milliseconds) {
 exports.syncDataBase = function () {
   console.log('Starting to sync Database')
   return new Promise(async function (resolve) {
-    // Rerteve database from storage
+    // Rerteve database from storage¨
+
     var db = await getDataBaseFromStorage()
     var isOld = await isDataBaseOlderThen(dayInMs)
 
     // Was data found and was it fresh?
-    if (isEmpty(db.imgurIds) || isOld) {
+    if (!db || isOld) {
       isOld ? console.log('🚨 Data is old') : console.log('🚨 No data Found')
 
       // Get new data from server
@@ -63,6 +68,7 @@ exports.syncDataBase = function () {
       // store in local storage
       storage.set({ imgurIds: db, age: Date.now() }, function () {
         console.log('Data from server saved to storage')
+        console.log(db)
         resolve(db)
       })
     } else {
