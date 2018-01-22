@@ -28,7 +28,7 @@
 
 🕶️ Image filters to unify cinemagraphs style (Chrome only)
 
-⏲ New image every new tab, 5min, 15min, 30min hourly or daily
+⏲ New cinemagraph every new tab, 5min, 15min, 30min hourly or daily
 
 ## How to install
 
