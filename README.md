@@ -49,9 +49,9 @@ You can install Freeze from the [Chrome web store](https://chrome.google.com/web
 
 
  
-You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/)
+You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/)
 
-<a href="https://addons.mozilla.org/sv-SE/firefox/addon/freeze-new-tab-page/">
+<a href="https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/">
     <img  src="https://i.imgur.com/fhrgN7g.png">
  </a>
 
