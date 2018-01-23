@@ -8,6 +8,7 @@
 
 <h4 align="center">A Curated Cinemagraph Each Time You Open a New Tab</h4>
 
+
 <p align="center">
   <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
     <img align="center" src="https://img.shields.io/chrome-web-store/v/kacdbklgelcjnoejpbafhdelhlnkgpnd.svg">
@@ -24,6 +25,9 @@
   <img align="center" src="https://media.giphy.com/media/l49JSrRTyRlSiKI6I/giphy.gif" width="430">
   <img align="center" src="https://media.giphy.com/media/d3OG6FhIFRF8WCti/giphy.gif" width="430">
 </p>
+
+<p align="center"><i>Cinemagraphs are still photographs in which a minor and repeated movement occurs, <br> forming a perefectly  looping video.</i></p> 
+
 
 
 ## Features
