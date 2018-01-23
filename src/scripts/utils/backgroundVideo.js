@@ -57,6 +57,8 @@ var randomFromArray = function (imageData) {
 
 var setBackground = function (playerElm, imageId) {
   playerElm.src = 'https://i.imgur.com/' + imageId + '.mp4'
+  var newTabElm = document.querySelector('.link')
+  newTabElm.href = 'https://imgur.com/' + imageId
 }
 
 var minToMilli = function (min) {
