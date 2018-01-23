@@ -98,4 +98,4 @@ The following tasks can be used when you want to start developing the extension
 
 ## License
 
-Freeze is released under the MIT License.
+Freeze is released under the [MIT License](https://github.com/Hemmingsson/Freeze/blob/master/LICENSE).
