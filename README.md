@@ -95,3 +95,7 @@ The following tasks can be used when you want to start developing the extension
 - [Extension Boilerplate](https://github.com/EmailThis/extension-boilerplate)
 - [instagram.css](https://github.com/picturepan2/instagram.css)
 - Cinemagraphs sourced from [imgur.com](https://imgur.com) and [r/Cinemagraphs](https://www.reddit.com/r/Cinemagraphs/)
+
+## License
+
+Freeze is released under the MIT License.
