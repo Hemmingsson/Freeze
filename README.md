@@ -88,7 +88,7 @@ The following tasks can be used when you want to start developing the extension
 - `npm run firefox-watch`
 
 
-## Credits
+## ❤️ Credits
 
 ### Freeze was made with :
 
