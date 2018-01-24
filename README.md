@@ -65,7 +65,11 @@ You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/fi
     <img  src="resources/AMO-dl.png" width="320">
  </a>
 
-## Running Dev Environement
+## Contribute
+
+Found a nice looking cinemagrph? Add it to [cinemagraphs.json](https://github.com/Hemmingsson/Freeze/blob/master/cinemagraphs.json) and create a pull request.
+
+## Dev Environement
 ### Installation
 1. Clone the repository `git clone https://github.com/Hemmingsson/Freeze`
 2. Run `npm install`
