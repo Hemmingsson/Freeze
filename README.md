@@ -67,7 +67,7 @@ You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/fi
 
 ## Contribute
 
-Found a nice looking cinemagrph? Add it to [cinemagraphs.json](https://github.com/Hemmingsson/Freeze/blob/master/cinemagraphs.json) and create a pull request.
+Found a nice looking Cinemagraph? Add it to [cinemagraphs.json](https://github.com/Hemmingsson/Freeze/blob/master/cinemagraphs.json) and create a pull request.
 
 ## Dev Environement
 ### Installation
