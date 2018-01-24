@@ -50,7 +50,7 @@
 You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
-    <img src="resources/CWS-dl.png">
+    <img src="resources/CWS-dl.png" width="320">
  </a>
 
 
@@ -62,7 +62,7 @@ You can install Freeze from the [Chrome web store](https://chrome.google.com/web
 You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/)
 
 <a href="https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/">
-    <img  src="resources/AMO-dl.png">
+    <img  src="resources/AMO-dl.png" width="320">
  </a>
 
 ## Running Dev Environement
