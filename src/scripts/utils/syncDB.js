@@ -1,6 +1,6 @@
 import storage from './storage'
 
-var dataBaseUrl = 'https://cdn.rawgit.com/Hemmingsson/downtime-extension/29689677/cinemagraphs.json'
+var dataBaseUrl = 'https://rawgit.com/Hemmingsson/Freeze/master/cinemagraphs.json'
 var dayInMs = 86400000
 
 function isEmpty (obj) {
