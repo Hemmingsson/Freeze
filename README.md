@@ -44,22 +44,25 @@
 
 ### Chrome
 
+You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
+
 <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
     <img src="resources/CWS-dl.png" width="320">
  </a>
  
-You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
 
 
 
 ### Firefox
 
+You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/)
+
+
 <a href="https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/">
     <img  src="resources/AMO-dl.png" width="320">
  </a>
  
- You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/)
-
+ 
 ## Contribute
 
 Found a nice looking Cinemagraph? Add it to [cinemagraphs.json](https://github.com/Hemmingsson/Freeze/blob/master/cinemagraphs.json) and create a pull request.
