@@ -32,13 +32,13 @@
 
 ## Features
 
-🎆 120+ Curated Cinemagraphs
+🎆 140+ Curated Cinemagraphs
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
 🕶️ Image filters to unify cinemagraphs style (Chrome only)
 
-⏲ New cinemagraph every new tab, 5min, 15min, 30min hourly or daily
+⏲ New cinemagraph every new tab, 5min, 15min, 30min, hourly or daily
 
 ## How to install
 
@@ -50,9 +50,6 @@ You can install Freeze from the [Chrome web store](https://chrome.google.com/web
     <img src="resources/CWS-dl.png" width="320">
  </a>
  
-
-
-
 ### Firefox
 
 You can install Freeze from [Mozilla Add-ons site](https://addons.mozilla.org/firefox/addon/freeze-new-tab-page/)
