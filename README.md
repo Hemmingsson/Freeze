@@ -98,3 +98,7 @@ The following tasks can be used when you want to start developing the extension
 ## License
 
 Freeze is released under the [MIT License](https://github.com/Hemmingsson/Freeze/blob/master/LICENSE).
+
+---
+
+[![Analytics](https://ga-beacon.appspot.com/UA-112799031-1/readme)](https://github.com/igrigorik/ga-beacon)
