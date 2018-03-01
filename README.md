@@ -41,7 +41,6 @@
 
 ⏲ New cinemagraph every new tab, 5min, 15min, 30min, hourly or daily
 
-<img src="https://media.giphy.com/media/w8sTdjWocNNvXoypOP/giphy.gif">
 
 ## How to install
 
