@@ -32,6 +32,7 @@
 
 ## Features
 
+
 🎆 140+ Curated Cinemagraphs
 
 🕑 12h clock, 24h clock, analog clock or no clock
@@ -39,6 +40,8 @@
 🕶️ Image filters to unify cinemagraphs style (Chrome only)
 
 ⏲ New cinemagraph every new tab, 5min, 15min, 30min, hourly or daily
+
+<img src="https://media.giphy.com/media/w8sTdjWocNNvXoypOP/giphy.gif">
 
 ## How to install
 
