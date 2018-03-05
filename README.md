@@ -84,7 +84,7 @@ If you find any bugs or want to provide feedback, you can file bugs in the proje
 
 ##### Load the extension in Firefox
 1. Open Firefox browser and navigate to about:debugging
-2. Click "Load Temporary Add-on" and from the file browser, choose `Freeze/build/firefox`
+2. Click "Load Temporary Add-on" and from the file browser, choose `Freeze/build/firefox/manifest.json`
 
 
 ### Developing
