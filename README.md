@@ -33,7 +33,7 @@
 ## Features
 
 
-🎆 150+ Curated Cinemagraphs
+🎆 160+ Curated Cinemagraphs
 
 🕑 12h clock, 24h clock, analog clock or no clock
 
