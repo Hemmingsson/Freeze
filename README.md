@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <br><img src="src/icons/icon-128.png?raw=true" alt="Freeze" width="128">
+  <br><img src="resources/logotype.png?raw=true" alt="Freeze" width="487">
   <br>
   Freeze - New Tab Page 
   <br>
