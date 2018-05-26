@@ -16,7 +16,7 @@ body {
     width: $window-width;
     margin: 0 auto;
     padding: $spacing;
-
+    border-top: 1px solid lightgray;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
