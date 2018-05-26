@@ -1,8 +1,8 @@
 
 <h1 align="center">
-  <br><img src="resources/logotype.png?raw=true" alt="Freeze" width="487">
+  <br><img src="resources/logotype.png?raw=true" alt="Freeze" width="128">
   <br>
-  New Tab Page Extension
+  Freeze - New Tab Page Extension
   <br>
 </h1>
 
