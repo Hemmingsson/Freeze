@@ -16,11 +16,11 @@
 </p>
  
 <p align="center">
-  <img align="center" src="https://media.giphy.com/media/26CaMNn3NWRQATnP2/giphy.gif" width="430">
-  <img align="center" src="https://media.giphy.com/media/xULW8yBkB3VBPpZlHW/giphy.gif" width="430">
+  <img align="center" src="https://media.giphy.com/media/26CaMNn3NWRQATnP2/giphy.gif" width="400">
+  <img align="center" src="https://media.giphy.com/media/xULW8yBkB3VBPpZlHW/giphy.gif" width="400">
    
-  <img align="center" src="https://media.giphy.com/media/l49JSrRTyRlSiKI6I/giphy.gif" width="430">
-  <img align="center" src="https://media.giphy.com/media/d3OG6FhIFRF8WCti/giphy.gif" width="430">
+  <img align="center" src="https://media.giphy.com/media/l49JSrRTyRlSiKI6I/giphy.gif" width="400">
+  <img align="center" src="https://media.giphy.com/media/d3OG6FhIFRF8WCti/giphy.gif" width="400">
 </p>
 
 <p align="center"><i>Cinemagraphs are still photographs in which a minor and repeated movement occurs, <br> forming a perfectly  looping video.</i></p> 
