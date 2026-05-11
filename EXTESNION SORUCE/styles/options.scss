@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+$border: 2px solid black;
+$spacing: 10px;
+$window-width: 600px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+
+    width: $window-width;
+    margin: 0 auto;
+    padding: $spacing;
+    border-top: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+
+    border: 2px solid black;
+    background-color: white;
+}
+.preview-wrapper{
+    margin-bottom: -3px;
+}
+
+.preview {
+    width: calc(#{$window-width} - 4px - #{$spacing} * 2);
+    height: calc(#{$window-width} * 7.5/16);
+    margin-bottom: -3px;
+
+    pointer-events: none;
+
+    border: none;
+}
+
+.settings {
+    display: flex;
+
+    width: 100;
+
+    border-top: $border;
+    border-bottom: $border;
+    .column {
+        flex-grow: 1;
+        padding: $spacing;
+    }
+}
+
+
+h3 {
+    margin-bottom: $spacing;
+    margin-top: $spacing / 2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+
+select {
+    width: 100%;
+
+    border: $border;
+    border-radius: 0;
+    option {
+        font-size: 12px;
+
+        padding: .5em 1em;
+    }
+    &:focus {
+    outline: none;
+    option {
+        &:checked {
+            color: white;
+            background: black linear-gradient(0deg, black 0%, black 100%);
+        }
+    }
+}
+}
+
+
+footer {
+    width: 100%;
+    padding: 0.2rem 0 0.6rem;
+    color: #8a8a8a;
+    text-align: center;
+    font-size: 14px;
+
+    a{
+        color: black;
+    }  
+    .emoji{
+        font-size: 1.6em;
+    }
+}

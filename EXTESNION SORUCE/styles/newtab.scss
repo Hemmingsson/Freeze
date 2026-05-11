@@ -1,0 +1,179 @@
+@import 'instagram.css';
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 100vh;
+    margin: 0;
+
+    user-select: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.video-wrapper {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+
+    width: 200%;
+    height: 200%;
+
+    transition: opacity 300ms;
+    pointer-events: none;
+    &.loading {
+        opacity: 0;
+    }
+}
+
+.filter {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    min-width: 50%;
+    min-height: 50%;
+    margin: auto;
+}
+
+.link {
+    font-family: monospace;
+    line-height: 1;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: .1vmax;
+
+    transition: 100ms;
+    text-decoration: none;
+
+    opacity: .4;
+    color: white;
+    &:hover {
+        opacity: 1;
+    }
+    svg {
+        width: 1.4vmax;
+        height: 1.4vmax;
+
+        mix-blend-mode: luminosity;
+        path {
+            fill: white;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.digi-clock {
+    font-size: 8vmax;
+    font-weight: 500;
+    line-height: 1;
+
+    position: absolute;
+    z-index: 100;
+
+    display: relative;
+
+    padding: .2vmax 1.2vmax;
+
+    text-transform: uppercase;
+
+    color: white;
+    border-radius: .3vmax;
+    box-shadow: 0 0 0 .8vmax #fff;
+}
+
+
+.analog-clock {
+    position: relative;
+
+    width: 35vmin;
+    height: 35vmin;
+    padding: 1vmin;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 .8vmax #fff;
+}
+
+.analog-clock-face {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(-.4vmax);
+
+    .hand {
+        position: absolute;
+        top: 50%;
+
+        width: 50%;
+        height: .8vmax;
+
+        transition: all 60ms cubic-bezier(.645, .045, .355, 1);
+        transform: rotate(90deg);
+        transform-origin: right;
+
+        //background-color: #fff;
+        &:after {
+            position: absolute;
+            position: absolute;
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            content: '';
+            transform-origin: right;
+
+            background-color: white;
+        }
+        &.hour-hand:after {
+            transform: scaleX(.7);
+        }
+        &.minute-hand:after {
+            transform: scaleX(.9);
+        }
+    }
+    &:after {
+        position: absolute;
+        position: absolute;
+        top: calc(50% + .4vmax);
+        left: calc(50%);
+
+        display: block;
+
+        width: .8vmax;
+        height: .8vmax;
+
+        content: '';
+        transform: translate(-50%, -50%);
+
+        border-radius: 100%;
+        background-color: white;
+    }
+}
