@@ -1,79 +1,22 @@
 import storage from './storage'
+import bundled from '../../../cinemagraphs.json'
 
-var dataBaseUrl = 'https://rawgit.com/Hemmingsson/Freeze/master/cinemagraphs.json'
-var dayInMs = 86400000
+const dataBaseUrl = 'https://raw.githubusercontent.com/Hemmingsson/Freeze/master/cinemagraphs.json'
+const dayInMs = 86400000
+const valid = items => Array.isArray(items) && items.length > 0 && items.every(id => typeof id === 'string' && /^[A-Za-z0-9]+$/.test(id))
 
-function isEmpty (obj) {
-  for (var prop in obj) {
-    if (obj.hasOwnProperty(prop)) {
-      return false
-    }
+exports.syncDataBase = async function () {
+  const cached = await new Promise(resolve => storage.get(['imgurIds', 'age'], resolve))
+  if (valid(cached.imgurIds) && Date.now() - cached.age < dayInMs) return cached.imgurIds
+  try {
+    const response = await fetch(dataBaseUrl, { credentials: 'omit', signal: AbortSignal.timeout(10000) })
+    if (!response.ok) throw new Error('Cinemagraph list unavailable')
+    const data = await response.json()
+    if (!valid(data.items)) throw new Error('Invalid cinemagraph list')
+    await new Promise(resolve => storage.set({ imgurIds: data.items, age: Date.now() }, resolve))
+    return data.items
+  } catch (error) {
+    // A fresh install can still open a new tab while offline.
+    return valid(cached.imgurIds) ? cached.imgurIds : bundled.items
   }
-  return true
-}
-
-var getDataBaseFromServer = function () {
-  return new Promise(function (resolve) {
-    console.log('Fetching from server')
-    fetch(dataBaseUrl, {
-      method: 'get'
-    }).then(function (response) {
-      return response.json()
-    }).then(function (j) {
-      resolve(j.items)
-    })
-  })
-}
-
-var getDataBaseFromStorage = function () {
-  console.log('Getting from storage')
-  return new Promise(function (resolve) {
-    storage.get('imgurIds', function (resp) {
-      resolve(resp)
-    })
-  })
-}
-
-var isDataBaseOlderThen = function (milliseconds) {
-  return new Promise(async function (resolve) {
-    storage.get('age', function (resp) {
-      if (resp) {
-        var difference = Date.now() - resp.age
-        if (difference < milliseconds) {
-          resolve(false)
-        } else {
-          resolve(true)
-        }
-      } else {
-        resolve(true)
-      }
-    })
-  })
-}
-
-exports.syncDataBase = function () {
-  console.log('Starting to sync Database')
-  return new Promise(async function (resolve) {
-    // Rerteve database from storage¨
-
-    var db = await getDataBaseFromStorage()
-    var isOld = await isDataBaseOlderThen(dayInMs)
-
-    // Was data found and was it fresh?
-    if (!db || isOld) {
-      isOld ? console.log('🚨 Data is old') : console.log('🚨 No data Found')
-
-      // Get new data from server
-      db = await getDataBaseFromServer()
-      // store in local storage
-      storage.set({ imgurIds: db, age: Date.now() }, function () {
-        console.log('Data from server saved to storage')
-        console.log(db)
-        resolve(db)
-      })
-    } else {
-      console.log('Database found')
-      resolve(db.imgurIds)
-    }
-  })
 }

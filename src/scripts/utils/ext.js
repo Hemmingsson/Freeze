@@ -65,4 +65,7 @@ function Extension () {
 
 }
 
-module.exports = new Extension();
+const extension = new Extension()
+// Chrome MV3 renamed browserAction to action.
+extension.browserAction = globalThis.chrome?.action || extension.browserAction
+module.exports = extension;

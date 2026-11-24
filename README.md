@@ -41,7 +41,7 @@
 
 ## How to install
 
-You can install Freeze from the [Chrome web store](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd)
+Build the current Manifest V3 source using the development instructions below. The [historical Chrome Web Store release](https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd) may not include these changes.
 
 <a href="https://chrome.google.com/webstore/detail/kacdbklgelcjnoejpbafhdelhlnkgpnd">
     <img src="resources/CWS-dl.png" width="320">
@@ -60,7 +60,7 @@ If you find any bugs or want to provide feedback, you can file bugs in the proje
 ## Dev Environement
 ### Installation
 1. Clone the repository `git clone https://github.com/Hemmingsson/Freeze`
-2. Run `npm install`
+2. Use Node.js 22 or later and run `npm ci`
 3. Run `npm run build`
 
 ##### Load the extension in Chrome
@@ -88,3 +88,11 @@ Freeze is released under the [MIT License](https://github.com/Hemmingsson/Freeze
 ---
 
 [![Analytics](https://ga-beacon.appspot.com/UA-112799031-1/readme)](https://github.com/igrigorik/ga-beacon)
+
+## Build checks
+
+`npm run build` creates Chrome Manifest V3 and Firefox Manifest V2 builds. Run `npm test` after building to check bundled assets. `npm run dist` creates ZIP files in `dist/`.
+
+Decorative video is muted and cannot receive keyboard focus. Firefox owns address-bar focus; the [reported browser bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1652293) may need a Firefox update. Address-bar behavior has not been verified in Firefox.
+
+The cinemagraph list refreshes from GitHub. If the refresh fails, Freeze uses cached or bundled IDs. Video failures stop retrying after three attempts.

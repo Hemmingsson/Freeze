@@ -1,6 +1,6 @@
 import storage from './storage'
 
-var fifte
+let failures = 0
 
 /* ==========================================================================
    Background Player
@@ -15,12 +15,18 @@ exports.init = function (imageData) {
 
 var playerEvents = function (playerElm, wrapperElm, imageData) {
   playerElm.addEventListener('canplaythrough', function () {
+    failures = 0
     wrapperElm.classList.remove('loading')
   })
 
   playerElm.addEventListener('error', function () {
-    console.error('!!! Backgound not found')
-    loadBackground(playerElm, wrapperElm, imageData)
+    failures++
+    if (failures >= 3) {
+      wrapperElm.classList.remove('loading')
+      wrapperElm.setAttribute('aria-label', 'Cinemagraph unavailable')
+      return
+    }
+    newBackground(playerElm, imageData)
   })
 }
 
@@ -45,7 +51,8 @@ function loadBackground (playerElm, wrapperElm, imageData) {
 }
 
 var newBackground = function (playerElm, imageData) {
-  var imageId = randomFromArray(imageData)
+  const candidates = imageData.filter(id => !playerElm.src.includes('/' + id + '.mp4'))
+  var imageId = randomFromArray(candidates.length ? candidates : imageData)
   storage.set({currentImageId: imageId})
   storage.set({timerAge: Date.now()})
   setBackground(playerElm, imageId)

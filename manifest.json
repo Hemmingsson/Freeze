@@ -12,7 +12,8 @@
     "newtab": "newtab.html"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "https://raw.githubusercontent.com/*"
   ],
   "options_ui": {
     "page": "options.html"
